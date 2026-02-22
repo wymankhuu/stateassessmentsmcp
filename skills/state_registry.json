@@ -1,0 +1,1903 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12",
+  "version": "1.0.0",
+  "generated": "2026-02-22",
+  "description": "AssessmentForge state registry — U.S. state assessment metadata for all 50 states + DC",
+  "states": {
+    "CA": {
+      "name": "California",
+      "tier": 1,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {
+        "ELA":  "CAASPP / Smarter Balanced ELA",
+        "MATH": "CAASPP / Smarter Balanced Mathematics",
+        "SCI":  "CAST (California Science Test)"
+      },
+      "standards_framework": {
+        "ELA":  "CCSS-ELA",
+        "MATH": "CCSS-Math",
+        "SCI":  "NGSS"
+      },
+      "testing_window": "April – June",
+      "vendor": "ETS / Smarter Balanced Assessment Consortium",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {
+        "ELA": {
+          "total_points": 65,
+          "session_count": 2,
+          "claims": [
+            {
+              "name": "Claim 1 — Reading",
+              "description": "Students can read closely and analytically to comprehend a range of literary and informational texts.",
+              "weight_pct": 45,
+              "min_items": 18,
+              "dok_distribution": {"1": 0.10, "2": 0.55, "3": 0.35}
+            },
+            {
+              "name": "Claim 2 — Writing",
+              "description": "Students can produce effective and well-grounded writing for a range of purposes and audiences.",
+              "weight_pct": 25,
+              "min_items": 7,
+              "dok_distribution": {"2": 0.40, "3": 0.60}
+            },
+            {
+              "name": "Claim 3 — Speaking & Listening",
+              "description": "Students can employ effective speaking and listening skills for a range of purposes and audiences.",
+              "weight_pct": 10,
+              "min_items": 2,
+              "dok_distribution": {"2": 1.0}
+            },
+            {
+              "name": "Claim 4 — Research",
+              "description": "Students can engage in research and inquiry to investigate topics and to analyze, integrate, and present information.",
+              "weight_pct": 20,
+              "min_items": 4,
+              "dok_distribution": {"2": 0.80, "3": 0.20}
+            }
+          ]
+        },
+        "MATH": {
+          "total_points": 55,
+          "session_count": 2,
+          "claims": [
+            {
+              "name": "Claim 1 — Concepts & Procedures",
+              "description": "Students can explain and apply mathematical concepts and carry out mathematical procedures with precision and fluency.",
+              "weight_pct": 40,
+              "min_items": 14,
+              "dok_distribution": {"1": 0.20, "2": 0.70, "3": 0.10}
+            },
+            {
+              "name": "Claim 2 — Problem Solving",
+              "description": "Students can solve a range of complex, well-posed problems using appropriate mathematical tools.",
+              "weight_pct": 25,
+              "min_items": 9,
+              "dok_distribution": {"2": 0.50, "3": 0.50}
+            },
+            {
+              "name": "Claim 3 — Communicating Reasoning",
+              "description": "Students can clearly and precisely construct viable arguments to support their own reasoning.",
+              "weight_pct": 20,
+              "min_items": 6,
+              "dok_distribution": {"2": 0.40, "3": 0.60}
+            },
+            {
+              "name": "Claim 4 — Modeling & Data Analysis",
+              "description": "Students can analyze complex, real-world scenarios and can construct and use mathematical models.",
+              "weight_pct": 15,
+              "min_items": 5,
+              "dok_distribution": {"2": 0.30, "3": 0.70}
+            }
+          ]
+        },
+        "SCI": {
+          "total_points": 40,
+          "session_count": 1,
+          "claims": [
+            {
+              "name": "Physical Sciences",
+              "weight_pct": 35,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            },
+            {
+              "name": "Life Sciences",
+              "weight_pct": 35,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            },
+            {
+              "name": "Earth and Space Sciences",
+              "weight_pct": 30,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            }
+          ]
+        }
+      },
+      "item_types": {
+        "ELA": [
+          {
+            "name": "Selected Response",
+            "abbreviation": "SR",
+            "description": "Single best-answer multiple choice from 4 options. One point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Which detail from the passage best supports the central idea?"
+          },
+          {
+            "name": "Multi-Select Response",
+            "abbreviation": "MS",
+            "description": "Choose exactly 2 or 3 correct answers from 5–8 options. Full credit only if ALL correct choices selected.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Select TWO details that best support the author's claim."
+          },
+          {
+            "name": "Technology Enhanced — Selectable Text",
+            "abbreviation": "TE-ST",
+            "description": "Student clicks or highlights specific text evidence within a passage.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Click on the sentence that reveals the narrator's motivation."
+          },
+          {
+            "name": "Technology Enhanced — Drag and Drop",
+            "abbreviation": "TE-DD",
+            "description": "Student arranges text cards into order or into categories.",
+            "points": 2,
+            "machine_scored": true,
+            "example_stem": "Place the events from the passage in the order they occurred."
+          },
+          {
+            "name": "Evidence-Based Selected Response",
+            "abbreviation": "EBSR",
+            "description": "Two-part item: Part A is SR; Part B requires selecting text evidence that supports Part A answer. 2 points total.",
+            "points": 2,
+            "machine_scored": true,
+            "example_stem": "Part A: What is the central idea? Part B: Which detail best supports your answer?"
+          },
+          {
+            "name": "Performance Task Full Write",
+            "abbreviation": "PT-FW",
+            "description": "Multi-paragraph essay scored on Organization/Purpose, Evidence/Elaboration, and Conventions. 0–4 each trait. 12 points total.",
+            "points": "0-12",
+            "machine_scored": false,
+            "example_stem": "Write an essay explaining how the two authors treat the theme of courage differently."
+          },
+          {
+            "name": "Performance Task Short Text",
+            "abbreviation": "PT-ST",
+            "description": "1–3 sentence research response from PT stimulus set. Scored 0-2.",
+            "points": "0-2",
+            "machine_scored": false,
+            "example_stem": "Using information from Source 1, explain one way that..."
+          }
+        ],
+        "MATH": [
+          {
+            "name": "Selected Response",
+            "abbreviation": "SR",
+            "description": "Four-option single best answer. One point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Multi-Select Response",
+            "abbreviation": "MS",
+            "description": "Choose all correct answers (2–3) from 5–6 options.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Select ALL equations that are equivalent to..."
+          },
+          {
+            "name": "Equation/Numeric Entry",
+            "abbreviation": "EQ",
+            "description": "Student types a numeric answer or equation into an entry field.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Short Constructed Response",
+            "abbreviation": "SCR",
+            "description": "Student writes a brief explanation, 2–3 sentences. Scored 0-2.",
+            "points": "0-2",
+            "machine_scored": false,
+            "example_stem": "Explain how you know your answer is correct using mathematical reasoning."
+          },
+          {
+            "name": "Performance Task Extended Response",
+            "abbreviation": "PT-ER",
+            "description": "Multi-part problem with show-of-work and written justification. Scored 0-6.",
+            "points": "0-6",
+            "machine_scored": false,
+            "example_stem": null
+          }
+        ],
+        "SCI": [
+          {
+            "name": "Selected Response",
+            "abbreviation": "SR",
+            "description": "Four-option single best answer. Assesses science and engineering practices with disciplinary core ideas.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Multi-Select Response",
+            "abbreviation": "MS",
+            "description": "Choose 2-3 correct answers from 5-6 options.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Constructed Response",
+            "abbreviation": "CR",
+            "description": "Student writes an explanation or analysis. Scored 0-3.",
+            "points": "0-3",
+            "machine_scored": false,
+            "example_stem": "Construct an argument from evidence explaining why..."
+          }
+        ]
+      },
+      "rubrics": {
+        "ELA": {
+          "PT-FW": {
+            "trait": "Organization/Purpose",
+            "score_points": [
+              {"score": 4, "description": "Clear and effective organizational structure creating unity and completeness. Strong command of purpose throughout. Sophisticated transitions.", "anchor_example": null},
+              {"score": 3, "description": "Adequate organizational structure. Clear introduction and conclusion. Logical development. Transitions present but may be formulaic.", "anchor_example": null},
+              {"score": 2, "description": "Inconsistent organizational structure. Introduction or conclusion may be weak. Limited transitions.", "anchor_example": null},
+              {"score": 1, "description": "Little or no discernible structure. No clear introduction or conclusion. Development absent or tangential.", "anchor_example": null},
+              {"score": 0, "description": "Blank, copied text, or entirely off-task.", "anchor_example": null}
+            ]
+          },
+          "PT-FW-EVE": {
+            "trait": "Evidence/Elaboration",
+            "score_points": [
+              {"score": 4, "description": "Convincing and thorough elaboration. Precise use of relevant evidence from sources. Effective elaborative techniques. Vocabulary precise and enhances response.", "anchor_example": null},
+              {"score": 3, "description": "Adequate elaboration. Some use of relevant evidence. Adequate vocabulary generally appropriate to the task.", "anchor_example": null},
+              {"score": 2, "description": "Weak or cursory elaboration. Evidence present but unelaborated or imprecise. General or imprecise vocabulary.", "anchor_example": null},
+              {"score": 1, "description": "Minimal or no evidence from sources. Vocabulary vague or below grade level.", "anchor_example": null},
+              {"score": 0, "description": "Blank or entirely off-task.", "anchor_example": null}
+            ]
+          },
+          "PT-FW-CONV": {
+            "trait": "Conventions",
+            "score_points": [
+              {"score": 4, "description": "Consistent application of conventions with few errors. Sentence variety enhances response. Minor errors do not interfere with understanding.", "anchor_example": null},
+              {"score": 3, "description": "Adequate command of conventions. Some errors present that do not significantly interfere with meaning.", "anchor_example": null},
+              {"score": 2, "description": "Partial command of conventions. Errors noticeable and occasionally interfere with meaning.", "anchor_example": null},
+              {"score": 1, "description": "Limited command of conventions. Frequent errors significantly interfere with meaning.", "anchor_example": null},
+              {"score": 0, "description": "Blank or not enough writing to evaluate.", "anchor_example": null}
+            ]
+          },
+          "PT-ST": {
+            "trait": "Research/Evidence",
+            "score_points": [
+              {"score": 2, "description": "Accurate answer with text-based evidence that directly addresses the research question. Evidence cited or paraphrased correctly.", "anchor_example": null},
+              {"score": 1, "description": "Partially correct answer, or correct answer with incomplete or tangential evidence.", "anchor_example": null},
+              {"score": 0, "description": "Incorrect, insufficient, or blank.", "anchor_example": null}
+            ]
+          }
+        },
+        "MATH": {
+          "SCR": {
+            "trait": "Mathematical Reasoning",
+            "score_points": [
+              {"score": 2, "description": "Response demonstrates complete and correct mathematical reasoning with appropriate vocabulary. Work is clear and well-organized.", "anchor_example": null},
+              {"score": 1, "description": "Response demonstrates partial understanding. Minor errors present or justification is incomplete.", "anchor_example": null},
+              {"score": 0, "description": "Response is incorrect, irrelevant, or blank.", "anchor_example": null}
+            ]
+          },
+          "PT-ER": {
+            "trait": "Mathematical Problem Solving",
+            "score_points": [
+              {"score": 6, "description": "All parts correct with clear, complete mathematical reasoning. Work shown systematically.", "anchor_example": null},
+              {"score": 5, "description": "All parts essentially correct. Minor computational or notational error.", "anchor_example": null},
+              {"score": 4, "description": "Correct approach throughout. One significant error or one part incorrect.", "anchor_example": null},
+              {"score": 3, "description": "Correct approach on majority of parts. Multiple minor errors or one major error.", "anchor_example": null},
+              {"score": 2, "description": "Partial understanding. Correct approach on some parts.", "anchor_example": null},
+              {"score": 1, "description": "Minimal understanding shown. Some relevant mathematical work.", "anchor_example": null},
+              {"score": 0, "description": "Incorrect, irrelevant, or blank.", "anchor_example": null}
+            ]
+          }
+        }
+      },
+      "generation_templates": {
+        "ELA": [
+          {
+            "template_id": "CA-ELA-EBSR-DOK2-GR35",
+            "item_type": "EBSR",
+            "dok_level": 2,
+            "grade_band": "3-5",
+            "template_text": "Read the informational article \"[PASSAGE_TITLE]\" (approx. [WORD_COUNT] words, [LEXILE]L).\n\nPart A ([STANDARD_CODE]):\nWhat is the [main relationship / central idea / author's primary claim] presented in this article?\nA. [Distractor — plausible but superficial]\nB. [Distractor — partially correct, misses nuance]\nC. [Correct — addresses standard precisely at DOK 2]\nD. [Distractor — common misconception]\n\nPart B:\nWhich sentence from the article BEST supports your answer to Part A?\nA. \"[Quote — does not support Part A answer]\"\nB. \"[Quote — tangentially related]\"\nC. \"[Quote — directly supports correct Part A answer]\"\nD. \"[Quote — misleading surface connection]\"\n\nAnswer Key: Part A: C | Part B: C\nAlignment: [STANDARD_CODE] | Claim 1 | DOK 2 | [LEXILE]L",
+            "placeholders": ["PASSAGE_TITLE", "WORD_COUNT", "LEXILE", "STANDARD_CODE"]
+          },
+          {
+            "template_id": "CA-ELA-EBSR-DOK3-GR68",
+            "item_type": "EBSR",
+            "dok_level": 3,
+            "grade_band": "6-8",
+            "template_text": "Read the passage \"[PASSAGE_TITLE]\".\n\nPart A ([STANDARD_CODE]):\nWhat is [author's argument / theme / central idea / point of view] in this text?\nA. [Distractor]\nB. [Distractor]\nC. [Correct — requires inference and analysis at DOK 3]\nD. [Distractor]\n\nPart B:\nWhich detail from the passage BEST supports your answer to Part A?\nA. \"[Short quote — does not support Part A]\"\nB. \"[Short quote — partially supports Part A]\"\nC. \"[Short quote — directly supports correct Part A answer]\"\nD. \"[Short quote — misleading]\"\n\nAnswer Key: Part A: C | Part B: C\nAlignment: [STANDARD_CODE] | Claim 1 | DOK 3 | [LEXILE]L",
+            "placeholders": ["PASSAGE_TITLE", "STANDARD_CODE", "LEXILE"]
+          },
+          {
+            "template_id": "CA-ELA-PT-FW-DOK3-GR6",
+            "item_type": "PT-FW",
+            "dok_level": 3,
+            "grade_band": "6-8",
+            "template_text": "[STUDENT DIRECTION]: You have read the following sources about [TOPIC]:\n- \"[TITLE_1]\" by [AUTHOR_1]\n- \"[TITLE_2]\" by [AUTHOR_2]\n- \"[TITLE_3]\" by [AUTHOR_3]\n\nWrite an argumentative essay explaining your position on [DEBATABLE ISSUE].\nUse evidence from at least two of the three sources to support your argument.\nMake sure to address a counterclaim in your essay.\n\n[SCORING GUIDE — 3 traits, 0–4 each, 12 pts total]\nTrait 1 — Organization/Purpose: clarity of claim, logical structure, purposeful development\nTrait 2 — Evidence/Elaboration: textual evidence, elaboration quality, vocabulary\nTrait 3 — Conventions: grammar, punctuation, spelling, sentence variety\n\nAlignment: W.[GRADE].1 / RI.[GRADE].8 / RI.[GRADE].9 | Claim 2 | DOK 3–4",
+            "placeholders": ["TOPIC", "TITLE_1", "AUTHOR_1", "TITLE_2", "AUTHOR_2", "TITLE_3", "AUTHOR_3", "DEBATABLE ISSUE", "GRADE"]
+          }
+        ],
+        "MATH": [
+          {
+            "template_id": "CA-MATH-SR-DOK2-GR35",
+            "item_type": "SR",
+            "dok_level": 2,
+            "grade_band": "3-5",
+            "template_text": "[REAL_WORLD_CONTEXT]. [PROBLEM_STEM]\n\nA. [Distractor — common procedural error result]\nB. [Distractor — partially correct approach]\nC. [Correct answer]\nD. [Distractor — conceptual misunderstanding result]\n\nAnswer Key: C\nAlignment: [STANDARD_CODE] | Claim 1 | DOK 2",
+            "placeholders": ["REAL_WORLD_CONTEXT", "PROBLEM_STEM", "STANDARD_CODE"]
+          },
+          {
+            "template_id": "CA-MATH-SCR-DOK3-GR35",
+            "item_type": "SCR",
+            "dok_level": 3,
+            "grade_band": "3-5",
+            "template_text": "[REAL_WORLD_CONTEXT] requires a student to [compare / analyze / justify].\n\n[PROBLEM_STEM]\n\nShow your work. Then explain how you know your answer is correct.\n\n[SCORING GUIDE]\n2 points: Correct answer with clear mathematical reasoning and appropriate vocabulary. Work shown.\n1 point: Correct method with arithmetic error, OR correct answer with weak justification.\n0 points: Incorrect or blank.\n\nAlignment: [STANDARD_CODE] | Claim 2 or 3 | DOK 3",
+            "placeholders": ["REAL_WORLD_CONTEXT", "PROBLEM_STEM", "STANDARD_CODE"]
+          }
+        ],
+        "SCI": [
+          {
+            "template_id": "CA-SCI-SR-DOK2-MS",
+            "item_type": "SR",
+            "dok_level": 2,
+            "grade_band": "6-8",
+            "template_text": "[SCIENCE_CONTEXT / SCENARIO / DATA TABLE / DIAGRAM]\n\n[PROBLEM_STEM that integrates SEP + DCI + CCC]\n\nA. [Distractor — addresses surface observation only]\nB. [Distractor — partially correct, confuses variables]\nC. [Correct — integrates SEP, DCI, and CCC]\nD. [Distractor — common misconception]\n\nAnswer Key: C\nAlignment: [NGSS_PE_CODE] | DOK 2",
+            "placeholders": ["SCIENCE_CONTEXT", "PROBLEM_STEM", "NGSS_PE_CODE"]
+          }
+        ]
+      },
+      "standards": {
+        "ELA": {
+          "5": [
+            {"code": "CCSS.ELA-Literacy.RL.5.1", "description": "Quote accurately from a text when explaining what the text says explicitly and when drawing inferences.", "domain": "Reading: Literature", "grade": "5", "dok_typical": 2},
+            {"code": "CCSS.ELA-Literacy.RL.5.2", "description": "Determine a theme of a story, drama, or poem from details; summarize the text.", "domain": "Reading: Literature", "grade": "5", "dok_typical": 2},
+            {"code": "CCSS.ELA-Literacy.RL.5.3", "description": "Compare and contrast two or more characters, settings, or events in a story or drama.", "domain": "Reading: Literature", "grade": "5", "dok_typical": 3},
+            {"code": "CCSS.ELA-Literacy.RL.5.6", "description": "Describe how a narrator's or speaker's point of view influences how events are described.", "domain": "Reading: Literature", "grade": "5", "dok_typical": 3},
+            {"code": "CCSS.ELA-Literacy.RI.5.3", "description": "Explain the relationships or interactions between two or more individuals, events, ideas, or concepts in a text.", "domain": "Reading: Informational Text", "grade": "5", "dok_typical": 2},
+            {"code": "CCSS.ELA-Literacy.RI.5.6", "description": "Analyze multiple accounts of the same event or topic, noting similarities and differences in the point of view they represent.", "domain": "Reading: Informational Text", "grade": "5", "dok_typical": 3},
+            {"code": "CCSS.ELA-Literacy.RI.5.8", "description": "Explain how an author uses reasons and evidence to support particular points in a text.", "domain": "Reading: Informational Text", "grade": "5", "dok_typical": 2},
+            {"code": "CCSS.ELA-Literacy.W.5.1", "description": "Write opinion pieces on topics or texts, supporting a point of view with reasons and information.", "domain": "Writing", "grade": "5", "dok_typical": 3}
+          ],
+          "8": [
+            {"code": "CCSS.ELA-Literacy.RI.8.6", "description": "Determine an author's point of view or purpose in a text and analyze how the author acknowledges and responds to conflicting evidence.", "domain": "Reading: Informational Text", "grade": "8", "dok_typical": 3},
+            {"code": "CCSS.ELA-Literacy.RI.8.8", "description": "Delineate and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound.", "domain": "Reading: Informational Text", "grade": "8", "dok_typical": 3},
+            {"code": "CCSS.ELA-Literacy.W.8.1", "description": "Write arguments to support claims with clear reasons and relevant evidence.", "domain": "Writing", "grade": "8", "dok_typical": 3}
+          ]
+        },
+        "MATH": {
+          "5": [
+            {"code": "CCSS.Math.Content.5.NBT.A.1", "description": "Recognize that in a multi-digit number, a digit in one place represents 10 times as much as the digit to its right.", "domain": "Number and Operations in Base Ten", "grade": "5", "dok_typical": 1},
+            {"code": "CCSS.Math.Content.5.NF.A.1", "description": "Add and subtract fractions with unlike denominators, including mixed numbers.", "domain": "Number and Operations — Fractions", "grade": "5", "dok_typical": 2},
+            {"code": "CCSS.Math.Content.5.NF.B.3", "description": "Interpret a fraction as division of the numerator by the denominator.", "domain": "Number and Operations — Fractions", "grade": "5", "dok_typical": 2},
+            {"code": "CCSS.Math.Content.5.MD.B.2", "description": "Make a line plot to display data. Solve problems involving information in a line plot.", "domain": "Measurement and Data", "grade": "5", "dok_typical": 2},
+            {"code": "CCSS.Math.Content.5.OA.A.2", "description": "Write simple expressions that record calculations with numbers, and interpret numerical expressions.", "domain": "Operations and Algebraic Thinking", "grade": "5", "dok_typical": 2}
+          ],
+          "8": [
+            {"code": "CCSS.Math.Content.8.EE.C.8", "description": "Analyze and solve pairs of simultaneous linear equations.", "domain": "Expressions and Equations", "grade": "8", "dok_typical": 2},
+            {"code": "CCSS.Math.Content.8.F.B.4", "description": "Construct a function to model a linear relationship between two quantities.", "domain": "Functions", "grade": "8", "dok_typical": 3},
+            {"code": "CCSS.Math.Content.8.SP.A.1", "description": "Construct and interpret scatter plots for bivariate measurement data.", "domain": "Statistics and Probability", "grade": "8", "dok_typical": 2}
+          ]
+        }
+      }
+    },
+
+    "TX": {
+      "name": "Texas",
+      "tier": 1,
+      "grades": ["3","4","5","6","7","8","EOC"],
+      "assessments": {
+        "ELA":  "STAAR ELA (State of Texas Assessments of Academic Readiness)",
+        "MATH": "STAAR Mathematics",
+        "SCI":  "STAAR Science"
+      },
+      "standards_framework": {
+        "ELA":  "TEKS-ELA",
+        "MATH": "TEKS-Math",
+        "SCI":  "TEKS-Science"
+      },
+      "testing_window": "April (online administration; multiple windows)",
+      "vendor": "Cambium Assessment / Texas Education Agency",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {
+        "ELA": {
+          "total_points": 56,
+          "session_count": 1,
+          "notes": "STAAR 2023 redesign: stacked passages with multiple items per stimulus. Mix of MCQ, Short Answer (SA), and Revising/Editing items.",
+          "claims": [
+            {
+              "name": "Reading — Literary Texts",
+              "weight_pct": 40,
+              "min_items": 12,
+              "dok_distribution": {"2": 0.50, "3": 0.50}
+            },
+            {
+              "name": "Reading — Informational Texts",
+              "weight_pct": 30,
+              "min_items": 9,
+              "dok_distribution": {"2": 0.50, "3": 0.50}
+            },
+            {
+              "name": "Composition (Written)",
+              "weight_pct": 20,
+              "min_items": 2,
+              "dok_distribution": {"3": 0.70, "4": 0.30}
+            },
+            {
+              "name": "Revising and Editing",
+              "weight_pct": 10,
+              "min_items": 4,
+              "dok_distribution": {"1": 0.30, "2": 0.70}
+            }
+          ]
+        },
+        "MATH": {
+          "total_points": 54,
+          "session_count": 1,
+          "claims": [
+            {
+              "name": "Numerical Representations and Relationships",
+              "weight_pct": 25,
+              "dok_distribution": {"1": 0.20, "2": 0.60, "3": 0.20}
+            },
+            {
+              "name": "Computations and Algebraic Relationships",
+              "weight_pct": 35,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            },
+            {
+              "name": "Geometry and Measurement",
+              "weight_pct": 25,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            },
+            {
+              "name": "Data Analysis and Financial Literacy",
+              "weight_pct": 15,
+              "dok_distribution": {"2": 0.50, "3": 0.50}
+            }
+          ]
+        },
+        "SCI": {
+          "total_points": 44,
+          "session_count": 1,
+          "claims": [
+            {
+              "name": "Scientific and Engineering Practices",
+              "weight_pct": 40,
+              "dok_distribution": {"2": 0.50, "3": 0.50}
+            },
+            {
+              "name": "Physical Sciences",
+              "weight_pct": 25,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            },
+            {
+              "name": "Life Sciences",
+              "weight_pct": 20,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            },
+            {
+              "name": "Earth and Space Sciences",
+              "weight_pct": 15,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            }
+          ]
+        }
+      },
+      "item_types": {
+        "ELA": [
+          {
+            "name": "Stacked Multiple Choice",
+            "abbreviation": "MCQ",
+            "description": "Multiple MCQ items sharing one stimulus (passage or paired passages). Each question is 1 point. Students read one passage then answer 4-8 questions about it.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Which sentence from the passage BEST shows the character's internal conflict?"
+          },
+          {
+            "name": "Short Answer",
+            "abbreviation": "SA",
+            "description": "Brief written response (2-4 sentences) scored 0, 1, or 2. Student must provide text evidence.",
+            "points": "0-2",
+            "machine_scored": false,
+            "example_stem": "Using evidence from the passage, explain how the author develops the theme of perseverance."
+          },
+          {
+            "name": "Extended Response — Personal Narrative",
+            "abbreviation": "ER-PN",
+            "description": "Multi-paragraph personal narrative scored on Organization, Development, Voice, and Conventions. Scored 0–4 per trait.",
+            "points": "0-16",
+            "machine_scored": false,
+            "example_stem": "Write about a time when you overcame a challenge. Use specific details to develop your story."
+          },
+          {
+            "name": "Extended Response — Expository",
+            "abbreviation": "ER-EX",
+            "description": "Multi-paragraph expository essay scored on Organization, Development, Voice, and Conventions.",
+            "points": "0-16",
+            "machine_scored": false,
+            "example_stem": "Explain how facing challenges can make people stronger. Use specific examples to develop your essay."
+          },
+          {
+            "name": "Revising and Editing",
+            "abbreviation": "RE",
+            "description": "Items embedded in a student-written draft passage. Students identify errors or suggest improvements.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Which revision BEST improves the underlined sentence in paragraph 3?"
+          }
+        ],
+        "MATH": [
+          {
+            "name": "Multiple Choice",
+            "abbreviation": "MCQ",
+            "description": "Four-option single best answer. One point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Multi-Select",
+            "abbreviation": "MS",
+            "description": "Select all correct answers (typically 2-3 from 5-6 options). One point; all must be correct.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Select ALL expressions that are equivalent to..."
+          },
+          {
+            "name": "Griddable / Numeric Entry",
+            "abbreviation": "GRID",
+            "description": "Student enters numeric answer in a grid. One point. No answer choices provided.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Short Answer — Math",
+            "abbreviation": "SA",
+            "description": "Student shows work and explains reasoning. Scored 0-2.",
+            "points": "0-2",
+            "machine_scored": false,
+            "example_stem": "Show your work and explain how you solved the problem."
+          }
+        ],
+        "SCI": [
+          {
+            "name": "Multiple Choice",
+            "abbreviation": "MCQ",
+            "description": "Four-option single best answer integrated with science scenario or data.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Multi-Select",
+            "abbreviation": "MS",
+            "description": "Select all correct answers.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Short Answer — Science",
+            "abbreviation": "SA",
+            "description": "Brief written response requiring evidence-based explanation.",
+            "points": "0-2",
+            "machine_scored": false,
+            "example_stem": "Using the data in the table, explain the relationship between..."
+          }
+        ]
+      },
+      "rubrics": {
+        "ELA": {
+          "SA": {
+            "trait": "Text-Based Comprehension",
+            "score_points": [
+              {"score": 2, "description": "Response provides an accurate, specific answer that addresses the question. Includes relevant, correctly-used textual evidence that directly supports the answer.", "anchor_example": null},
+              {"score": 1, "description": "Response provides a partially accurate answer OR provides an accurate answer without sufficient textual evidence.", "anchor_example": null},
+              {"score": 0, "description": "Response is inaccurate, irrelevant, insufficient, or blank.", "anchor_example": null}
+            ]
+          },
+          "ER-EX": {
+            "trait": "Organization",
+            "score_points": [
+              {"score": 4, "description": "Single controlling idea clearly stated and maintained. Strong, meaningful progression of ideas. Purposeful use of transitions.", "anchor_example": null},
+              {"score": 3, "description": "Single controlling idea stated and generally maintained. Adequate progression. Transitions present.", "anchor_example": null},
+              {"score": 2, "description": "Controlling idea evident but inconsistently maintained. Some logical progression.", "anchor_example": null},
+              {"score": 1, "description": "Controlling idea unclear. Random or illogical progression.", "anchor_example": null},
+              {"score": 0, "description": "Blank or no evidence of attempt.", "anchor_example": null}
+            ]
+          }
+        },
+        "MATH": {
+          "SA": {
+            "trait": "Mathematical Reasoning",
+            "score_points": [
+              {"score": 2, "description": "Work clearly shows correct mathematical process. Answer is correct and explanation demonstrates understanding.", "anchor_example": null},
+              {"score": 1, "description": "Work shows understanding of the mathematical concept with minor errors, OR correct answer without clear explanation.", "anchor_example": null},
+              {"score": 0, "description": "No understanding demonstrated or blank.", "anchor_example": null}
+            ]
+          }
+        }
+      },
+      "generation_templates": {
+        "ELA": [
+          {
+            "template_id": "TX-ELA-MCQ-DOK2-STACKED",
+            "item_type": "MCQ",
+            "dok_level": 2,
+            "grade_band": "3-8",
+            "template_text": "[STACKED STIMULUS HEADER]\nPassage: \"[PASSAGE_TITLE]\" — Paragraph(s) [PARA_RANGE]\n\n[TEKS_CODE] — [DOK 2 question stem about the passage — inference, main idea, theme, craft, or structure]\n\nA [Distractor — misreads or oversimplifies]\nB [Partially correct — right idea, wrong evidence]\nC [Correct — requires inference at DOK 2]\nD [Distractor — tempting misconception]\n\nCorrect Answer: C\nAlignment: [TEKS_CODE] | DOK 2",
+            "placeholders": ["PASSAGE_TITLE", "PARA_RANGE", "TEKS_CODE"]
+          },
+          {
+            "template_id": "TX-ELA-SA-DOK3",
+            "item_type": "SA",
+            "dok_level": 3,
+            "grade_band": "3-8",
+            "template_text": "Using evidence from \"[PASSAGE_TITLE],\" [TASK: explain / analyze / compare] [ASPECT OF TEXT].\n\n[SCORING GUIDE]\n2 points: Accurate, specific answer with relevant textual evidence directly quoted or paraphrased.\n1 point: Accurate answer without evidence, OR evidence without clear connection to answer.\n0 points: Inaccurate, off-topic, or blank.\n\nAlignment: [TEKS_CODE] | DOK 3",
+            "placeholders": ["PASSAGE_TITLE", "TASK", "ASPECT OF TEXT", "TEKS_CODE"]
+          }
+        ],
+        "MATH": [
+          {
+            "template_id": "TX-MATH-GRID-DOK2",
+            "item_type": "GRID",
+            "dok_level": 2,
+            "grade_band": "3-8",
+            "template_text": "[REAL_WORLD_CONTEXT]\n\n[PROBLEM_STEM]\n\nRecord your answer and fill in the bubbles on the answer document.\n\nAnswer: [CORRECT_ANSWER]\nAlignment: [TEKS_CODE] | DOK 2",
+            "placeholders": ["REAL_WORLD_CONTEXT", "PROBLEM_STEM", "CORRECT_ANSWER", "TEKS_CODE"]
+          }
+        ],
+        "SCI": [
+          {
+            "template_id": "TX-SCI-MCQ-DOK2-DATA",
+            "item_type": "MCQ",
+            "dok_level": 2,
+            "grade_band": "5-8",
+            "template_text": "[DATA TABLE / GRAPH / DIAGRAM with realistic science data]\n\nBased on the [data / diagram / experiment], which [conclusion / inference / explanation] is BEST supported?\n\nA [Distractor — misreads data]\nB [Distractor — partially correct interpretation]\nC [Correct — integrates data with science concept]\nD [Distractor — irrelevant science fact]\n\nCorrect Answer: C\nAlignment: [TEKS_CODE] | DOK 2",
+            "placeholders": ["DATA / DIAGRAM", "TEKS_CODE"]
+          }
+        ]
+      },
+      "standards": {
+        "ELA": {
+          "6": [
+            {"code": "TEKS.ELA6.6A", "description": "Analyze how the author's use of language creates imagery, mood, or theme.", "domain": "Reading — Literary", "grade": "6", "dok_typical": 3},
+            {"code": "TEKS.ELA6.8A", "description": "Explain the author's purpose and determine whether the author achieved it.", "domain": "Reading — Informational", "grade": "6", "dok_typical": 2},
+            {"code": "TEKS.ELA6.10A", "description": "Write an expository text that has a clear central idea with supporting details.", "domain": "Composition", "grade": "6", "dok_typical": 3}
+          ]
+        },
+        "MATH": {
+          "6": [
+            {"code": "TEKS.Math6.3A", "description": "Recognize that dividing by a rational number and multiplying by its reciprocal result in equivalent values.", "domain": "Number and Operations", "grade": "6", "dok_typical": 2},
+            {"code": "TEKS.Math6.6A", "description": "Identify independent and dependent quantities from tables and graphs.", "domain": "Expressions, Equations, and Relationships", "grade": "6", "dok_typical": 2},
+            {"code": "TEKS.Math6.12A", "description": "Represent numeric data graphically, including dot plots, stem-and-leaf plots, histograms, and box plots.", "domain": "Measurement and Data", "grade": "6", "dok_typical": 2}
+          ]
+        }
+      }
+    },
+
+    "NY": {
+      "name": "New York",
+      "tier": 1,
+      "grades": ["3","4","5","6","7","8"],
+      "assessments": {
+        "ELA":  "NYS Grades 3–8 ELA Test",
+        "MATH": "NYS Grades 3–8 Mathematics Test",
+        "SCI":  "NYS Elementary and Intermediate Science Tests (Grades 4 & 8)"
+      },
+      "standards_framework": {
+        "ELA":  "NYS Next Generation ELA Learning Standards (2017, based on CCSS)",
+        "MATH": "NYS Next Generation Math Learning Standards (2017, based on CCSS)",
+        "SCI":  "NYS P-12 Science Learning Standards (2016, NGSS-aligned)"
+      },
+      "testing_window": "April (ELA); May (Math); May (Science)",
+      "vendor": "New York State Education Department (NYSED) / Questar",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {
+        "ELA": {
+          "total_points": 57,
+          "session_count": 3,
+          "notes": "3 sessions: Session 1 (listening); Session 2 (literary); Session 3 (informational). Each session includes reading passages + questions.",
+          "claims": [
+            {
+              "name": "Literary Text Comprehension",
+              "weight_pct": 35,
+              "dok_distribution": {"2": 0.55, "3": 0.45}
+            },
+            {
+              "name": "Informational Text Comprehension",
+              "weight_pct": 35,
+              "dok_distribution": {"2": 0.55, "3": 0.45}
+            },
+            {
+              "name": "Writing from Sources",
+              "weight_pct": 30,
+              "dok_distribution": {"3": 0.70, "4": 0.30}
+            }
+          ]
+        },
+        "MATH": {
+          "total_points": 51,
+          "session_count": 3,
+          "notes": "3 sessions across 2 days. Sessions 1-3 contain multiple choice, short response, and extended response items.",
+          "claims": [
+            {
+              "name": "Operations and Algebraic Thinking / Expressions and Equations",
+              "weight_pct": 35,
+              "dok_distribution": {"1": 0.15, "2": 0.65, "3": 0.20}
+            },
+            {
+              "name": "Number and Operations",
+              "weight_pct": 30,
+              "dok_distribution": {"1": 0.20, "2": 0.65, "3": 0.15}
+            },
+            {
+              "name": "Geometry and Measurement",
+              "weight_pct": 20,
+              "dok_distribution": {"2": 0.70, "3": 0.30}
+            },
+            {
+              "name": "Statistics and Probability",
+              "weight_pct": 15,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            }
+          ]
+        }
+      },
+      "item_types": {
+        "ELA": [
+          {
+            "name": "Multiple Choice",
+            "abbreviation": "MC",
+            "description": "Four-option single best answer. 1 point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "What is the MOST likely reason the author included paragraph 4?"
+          },
+          {
+            "name": "Short Response",
+            "abbreviation": "SR",
+            "description": "Brief written response requiring text evidence. Scored 0-2.",
+            "points": "0-2",
+            "machine_scored": false,
+            "example_stem": "Use details from the text to explain how the author develops the central idea."
+          },
+          {
+            "name": "Extended Response",
+            "abbreviation": "ER",
+            "description": "Multi-paragraph essay using two or more texts. Scored 0-4.",
+            "points": "0-4",
+            "machine_scored": false,
+            "example_stem": "Using details from both texts, write an essay explaining..."
+          }
+        ],
+        "MATH": [
+          {
+            "name": "Multiple Choice",
+            "abbreviation": "MC",
+            "description": "Four-option single best answer. 1 point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Short Response",
+            "abbreviation": "SR",
+            "description": "Student shows work and/or explains reasoning. Scored 0-2.",
+            "points": "0-2",
+            "machine_scored": false,
+            "example_stem": "Show your work."
+          },
+          {
+            "name": "Extended Response",
+            "abbreviation": "ER",
+            "description": "Multi-part problem requiring work and explanation. Scored 0-3.",
+            "points": "0-3",
+            "machine_scored": false,
+            "example_stem": null
+          }
+        ],
+        "SCI": [
+          {
+            "name": "Multiple Choice",
+            "abbreviation": "MC",
+            "description": "Four-option single best answer.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Constructed Response",
+            "abbreviation": "CR",
+            "description": "Written response requiring scientific reasoning. Scored 0-3.",
+            "points": "0-3",
+            "machine_scored": false,
+            "example_stem": "Describe the evidence that supports the conclusion that..."
+          }
+        ]
+      },
+      "rubrics": {
+        "ELA": {
+          "SR": {
+            "trait": "Text-Based Evidence",
+            "score_points": [
+              {"score": 2, "description": "Response addresses the prompt, identifies a relevant and accurate central idea or theme, and provides specific text-based evidence.", "anchor_example": null},
+              {"score": 1, "description": "Response addresses the prompt and provides a central idea or theme that is only partially supported by text-based evidence.", "anchor_example": null},
+              {"score": 0, "description": "Response does not address the prompt or provides only a central idea or theme that is inaccurate or unsupported.", "anchor_example": null}
+            ]
+          },
+          "ER": {
+            "trait": "Writing From Sources",
+            "score_points": [
+              {"score": 4, "description": "Response clearly introduces a topic, provides thorough evidence from multiple texts, and establishes well-developed ideas. Writing is cohesive.", "anchor_example": null},
+              {"score": 3, "description": "Response introduces a topic, provides adequate evidence from texts, and establishes developed ideas.", "anchor_example": null},
+              {"score": 2, "description": "Response introduces a topic, provides limited evidence from texts, and establishes partially developed ideas.", "anchor_example": null},
+              {"score": 1, "description": "Response demonstrates minimal understanding of the task.", "anchor_example": null},
+              {"score": 0, "description": "Response is absent, illegible, or entirely off-task.", "anchor_example": null}
+            ]
+          }
+        },
+        "MATH": {
+          "SR": {
+            "trait": "Mathematical Understanding",
+            "score_points": [
+              {"score": 2, "description": "Work clearly demonstrates correct mathematical process. Answer is correct.", "anchor_example": null},
+              {"score": 1, "description": "Work shows appropriate process but contains computational errors, OR correct answer without supporting work.", "anchor_example": null},
+              {"score": 0, "description": "Incorrect process or blank.", "anchor_example": null}
+            ]
+          }
+        }
+      },
+      "generation_templates": {
+        "ELA": [
+          {
+            "template_id": "NY-ELA-SR-DOK2",
+            "item_type": "SR",
+            "dok_level": 2,
+            "grade_band": "3-8",
+            "template_text": "Read the passage \"[PASSAGE_TITLE]\".\n\nUse details from the text to explain [ASPECT: the central idea / how the author develops the theme / the relationship between events].\n\n[SCORING GUIDE]\n2 points: Identifies [central idea / theme / relationship] accurately AND provides specific text-based evidence.\n1 point: Partially accurate with incomplete or vague evidence.\n0 points: Inaccurate or no evidence.\n\nAlignment: [NYSSL_CODE] | DOK 2",
+            "placeholders": ["PASSAGE_TITLE", "ASPECT", "NYSSL_CODE"]
+          }
+        ],
+        "MATH": [
+          {
+            "template_id": "NY-MATH-SR-DOK2",
+            "item_type": "SR",
+            "dok_level": 2,
+            "grade_band": "3-8",
+            "template_text": "[REAL_WORLD_CONTEXT]\n\n[MULTI-STEP PROBLEM STEM]\n\nShow your work.\n\nAnswer: __________\n\n[SCORING GUIDE]\n2 points: Correct answer with work shown demonstrating correct process.\n1 point: Computational error in otherwise correct process, OR correct answer without work.\n0 points: Incorrect or blank.\n\nAlignment: [CCSS_CODE] | DOK 2",
+            "placeholders": ["REAL_WORLD_CONTEXT", "PROBLEM STEM", "CCSS_CODE"]
+          }
+        ],
+        "SCI": [
+          {
+            "template_id": "NY-SCI-CR-DOK2",
+            "item_type": "CR",
+            "dok_level": 2,
+            "grade_band": "4-8",
+            "template_text": "[SCIENCE SCENARIO / DATA]\n\nDescribe the evidence that supports [SCIENTIFIC CONCLUSION]. Use information from [the diagram / the data table / the experiment] in your answer.\n\n[SCORING GUIDE]\n3 points: Accurate scientific explanation identifying specific evidence and connecting it to the conclusion.\n2 points: Accurate explanation with partial evidence or weak connection.\n1 point: Partially accurate explanation.\n0 points: Inaccurate or blank.\n\nAlignment: [NYS_SCI_CODE] | DOK 2",
+            "placeholders": ["SCIENCE SCENARIO", "SCIENTIFIC CONCLUSION", "NYS_SCI_CODE"]
+          }
+        ]
+      },
+      "standards": {
+        "ELA": {
+          "6": [
+            {"code": "NYSL.RI.6.6", "description": "Determine an author's point of view or purpose in a text and explain how it is conveyed.", "domain": "Reading Informational Text", "grade": "6", "dok_typical": 3},
+            {"code": "NYSL.RI.6.8", "description": "Trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not.", "domain": "Reading Informational Text", "grade": "6", "dok_typical": 3}
+          ]
+        },
+        "MATH": {
+          "6": [
+            {"code": "NGSM.6.RP.A.1", "description": "Understand the concept of a ratio and use ratio language to describe a ratio relationship between two quantities.", "domain": "Ratios and Proportional Relationships", "grade": "6", "dok_typical": 2}
+          ]
+        }
+      }
+    },
+
+    "FL": {
+      "name": "Florida",
+      "tier": 1,
+      "grades": ["3","4","5","6","7","8","9","10"],
+      "assessments": {
+        "ELA":  "FAST ELA Reading (Florida Assessment of Student Thinking)",
+        "MATH": "FAST Mathematics",
+        "SCI":  "Florida Science Assessment (FAST Science, Grades 5 & 8)"
+      },
+      "standards_framework": {
+        "ELA":  "Florida B.E.S.T. Standards — ELA",
+        "MATH": "Florida B.E.S.T. Standards — Mathematics",
+        "SCI":  "Florida NGSSS (Next Generation Sunshine State Standards)"
+      },
+      "testing_window": "February – May (FAST has multiple Progress Monitoring windows)",
+      "vendor": "Florida Department of Education / American Institutes for Research (AIR)",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {
+        "ELA": {
+          "total_points": 60,
+          "session_count": 2,
+          "notes": "FAST ELA replaced FSA in 2022-23. Tests are shorter and more focused on core reading skills. Multiple reading passages with MCQ and open-response items.",
+          "claims": [
+            {
+              "name": "Reading Prose and Poetry",
+              "weight_pct": 40,
+              "dok_distribution": {"2": 0.50, "3": 0.50}
+            },
+            {
+              "name": "Reading Informational Text",
+              "weight_pct": 40,
+              "dok_distribution": {"2": 0.50, "3": 0.50}
+            },
+            {
+              "name": "Vocabulary",
+              "weight_pct": 20,
+              "dok_distribution": {"1": 0.30, "2": 0.70}
+            }
+          ]
+        },
+        "MATH": {
+          "total_points": 50,
+          "session_count": 2,
+          "claims": [
+            {
+              "name": "Number Sense and Operations",
+              "weight_pct": 30,
+              "dok_distribution": {"1": 0.20, "2": 0.70, "3": 0.10}
+            },
+            {
+              "name": "Algebraic Reasoning",
+              "weight_pct": 30,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            },
+            {
+              "name": "Geometric Reasoning and Measurement",
+              "weight_pct": 25,
+              "dok_distribution": {"2": 0.65, "3": 0.35}
+            },
+            {
+              "name": "Data Analysis and Probability",
+              "weight_pct": 15,
+              "dok_distribution": {"2": 0.65, "3": 0.35}
+            }
+          ]
+        }
+      },
+      "item_types": {
+        "ELA": [
+          {
+            "name": "Multiple Choice",
+            "abbreviation": "MC",
+            "description": "Four-option single best answer. 1 point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Which sentence BEST describes the author's main purpose?"
+          },
+          {
+            "name": "Open Response",
+            "abbreviation": "OR",
+            "description": "Brief written response requiring text evidence. Scored 0-3.",
+            "points": "0-3",
+            "machine_scored": false,
+            "example_stem": "Explain how the author's word choice affects the tone of the passage. Use evidence from the text."
+          },
+          {
+            "name": "Multi-Select",
+            "abbreviation": "MS",
+            "description": "Select all that apply (2-3 correct from 5-6 options). 1 point; all must be correct.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Select TWO examples from the passage that show..."
+          }
+        ],
+        "MATH": [
+          {
+            "name": "Multiple Choice",
+            "abbreviation": "MC",
+            "description": "Four-option single best answer. 1 point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Fill-in Response",
+            "abbreviation": "FR",
+            "description": "Student types a numeric answer. 1 point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Multi-Select",
+            "abbreviation": "MS",
+            "description": "Select all correct answers.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Open Response",
+            "abbreviation": "OR",
+            "description": "Student shows work and explains reasoning. Scored 0-4.",
+            "points": "0-4",
+            "machine_scored": false,
+            "example_stem": "Show your work and explain your thinking."
+          }
+        ],
+        "SCI": [
+          {
+            "name": "Multiple Choice",
+            "abbreviation": "MC",
+            "description": "Four-option single best answer.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Open Response",
+            "abbreviation": "OR",
+            "description": "Written scientific explanation. Scored 0-4.",
+            "points": "0-4",
+            "machine_scored": false,
+            "example_stem": "Using the data provided, explain the relationship between..."
+          }
+        ]
+      },
+      "rubrics": {
+        "ELA": {
+          "OR": {
+            "trait": "Text-Based Response",
+            "score_points": [
+              {"score": 3, "description": "Response clearly and thoroughly addresses all aspects of the prompt with specific, accurate text evidence. Demonstrates sophisticated understanding.", "anchor_example": null},
+              {"score": 2, "description": "Response adequately addresses the prompt with accurate text evidence. Demonstrates general understanding.", "anchor_example": null},
+              {"score": 1, "description": "Response partially addresses the prompt. Evidence is vague, incomplete, or only partially accurate.", "anchor_example": null},
+              {"score": 0, "description": "Response is absent, illegible, or does not address the prompt.", "anchor_example": null}
+            ]
+          }
+        },
+        "MATH": {
+          "OR": {
+            "trait": "Mathematical Reasoning",
+            "score_points": [
+              {"score": 4, "description": "Complete, correct solution with clear work shown. Explanation is thorough and uses appropriate mathematical vocabulary.", "anchor_example": null},
+              {"score": 3, "description": "Nearly complete solution. Minor error that does not affect the overall approach.", "anchor_example": null},
+              {"score": 2, "description": "Partial solution showing understanding of the mathematical concept.", "anchor_example": null},
+              {"score": 1, "description": "Minimal mathematical work showing some relevant knowledge.", "anchor_example": null},
+              {"score": 0, "description": "Blank or no relevant mathematical work.", "anchor_example": null}
+            ]
+          }
+        }
+      },
+      "generation_templates": {
+        "ELA": [
+          {
+            "template_id": "FL-ELA-OR-DOK3",
+            "item_type": "OR",
+            "dok_level": 3,
+            "grade_band": "3-10",
+            "template_text": "Read the passage \"[PASSAGE_TITLE]\".\n\nExplain how the author's [word choice / structure / perspective] affects [the tone / the reader's understanding / the central idea]. Use evidence from the text to support your explanation.\n\n[SCORING GUIDE]\n3 points: Clearly explains the relationship with 2+ specific, accurate examples from text. Demonstrates deep understanding.\n2 points: Explains the relationship adequately with 1-2 text examples. Demonstrates general understanding.\n1 point: Partially addresses the task. Evidence vague or incomplete.\n0 points: Off-task or blank.\n\nAlignment: [BEST_ELA_CODE] | DOK 3",
+            "placeholders": ["PASSAGE_TITLE", "BEST_ELA_CODE"]
+          }
+        ],
+        "MATH": [
+          {
+            "template_id": "FL-MATH-OR-DOK3",
+            "item_type": "OR",
+            "dok_level": 3,
+            "grade_band": "3-8",
+            "template_text": "[MULTI-PART REAL-WORLD SCENARIO]\n\nPart A: [Question requiring application of concept]\n\nPart B: [Question requiring explanation or extension]\n\nShow all work and explain your thinking.\n\n[SCORING GUIDE]\n4 points: Both parts correct with clear work and explanation.\n3 points: One minor error in otherwise correct approach.\n2 points: Correct approach in Part A, incomplete or incorrect Part B.\n1 point: Some relevant mathematical work.\n0 points: Blank or no relevant work.\n\nAlignment: [BEST_MATH_CODE] | DOK 3",
+            "placeholders": ["SCENARIO", "BEST_MATH_CODE"]
+          }
+        ],
+        "SCI": [
+          {
+            "template_id": "FL-SCI-MC-DOK2",
+            "item_type": "MC",
+            "dok_level": 2,
+            "grade_band": "5-8",
+            "template_text": "[SCIENCE SCENARIO with data, diagram, or experiment description]\n\nBased on the [data / investigation / diagram], which statement BEST explains [PHENOMENON]?\n\nA [Distractor — misidentifies variable or cause]\nB [Correct — accurately applies science concept to scenario]\nC [Distractor — accurate science fact but not relevant to this scenario]\nD [Distractor — common misconception]\n\nCorrect Answer: B\nAlignment: [NGSSS_CODE] | DOK 2",
+            "placeholders": ["SCIENCE SCENARIO", "PHENOMENON", "NGSSS_CODE"]
+          }
+        ]
+      },
+      "standards": {
+        "ELA": {
+          "5": [
+            {"code": "BEST.ELA.5.R.1.1", "description": "Explain how the author's use of time affects the sequence of events.", "domain": "Reading Literary Text", "grade": "5", "dok_typical": 2},
+            {"code": "BEST.ELA.5.R.2.1", "description": "Explain how an author develops the main idea using relevant details.", "domain": "Reading Informational Text", "grade": "5", "dok_typical": 2}
+          ]
+        },
+        "MATH": {
+          "5": [
+            {"code": "BEST.Math.5.NSO.2.1", "description": "Multiply multi-digit whole numbers including using the standard algorithm.", "domain": "Number Sense and Operations", "grade": "5", "dok_typical": 1},
+            {"code": "BEST.Math.5.AR.1.1", "description": "Solve multi-step real-world problems involving addition, subtraction, multiplication, and division of whole numbers.", "domain": "Algebraic Reasoning", "grade": "5", "dok_typical": 2}
+          ]
+        }
+      }
+    },
+
+    "IL": {
+      "name": "Illinois",
+      "tier": 1,
+      "grades": ["3","4","5","6","7","8"],
+      "assessments": {
+        "ELA":  "IAR ELA (Illinois Assessment of Readiness)",
+        "MATH": "IAR Mathematics",
+        "SCI":  "ISA (Illinois Science Assessment)"
+      },
+      "standards_framework": {
+        "ELA":  "CCSS-ELA (Illinois Learning Standards)",
+        "MATH": "CCSS-Math (Illinois Learning Standards)",
+        "SCI":  "NGSS (Illinois Learning Standards for Science)"
+      },
+      "testing_window": "March – April",
+      "vendor": "Measured Progress / Illinois State Board of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {
+        "ELA": {
+          "total_points": 58,
+          "session_count": 2,
+          "notes": "IAR is based on Smarter Balanced design. Session 1: CAT with literary and informational passages. Session 2: Performance Task with Full Write.",
+          "claims": [
+            {
+              "name": "Claim 1 — Reading",
+              "weight_pct": 45,
+              "min_items": 18,
+              "dok_distribution": {"1": 0.10, "2": 0.55, "3": 0.35}
+            },
+            {
+              "name": "Claim 2 — Writing",
+              "weight_pct": 25,
+              "min_items": 7,
+              "dok_distribution": {"2": 0.40, "3": 0.60}
+            },
+            {
+              "name": "Claim 4 — Research",
+              "weight_pct": 30,
+              "min_items": 5,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            }
+          ]
+        },
+        "MATH": {
+          "total_points": 52,
+          "session_count": 2,
+          "claims": [
+            {
+              "name": "Claim 1 — Concepts & Procedures",
+              "weight_pct": 40,
+              "min_items": 14,
+              "dok_distribution": {"1": 0.20, "2": 0.70, "3": 0.10}
+            },
+            {
+              "name": "Claim 2 — Problem Solving",
+              "weight_pct": 25,
+              "min_items": 9,
+              "dok_distribution": {"2": 0.50, "3": 0.50}
+            },
+            {
+              "name": "Claim 3 — Communicating Reasoning",
+              "weight_pct": 20,
+              "min_items": 6,
+              "dok_distribution": {"2": 0.40, "3": 0.60}
+            },
+            {
+              "name": "Claim 4 — Modeling & Data Analysis",
+              "weight_pct": 15,
+              "min_items": 4,
+              "dok_distribution": {"2": 0.30, "3": 0.70}
+            }
+          ]
+        },
+        "SCI": {
+          "total_points": 40,
+          "session_count": 1,
+          "claims": [
+            {
+              "name": "Physical Sciences",
+              "weight_pct": 34,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            },
+            {
+              "name": "Life Sciences",
+              "weight_pct": 33,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            },
+            {
+              "name": "Earth and Space Sciences",
+              "weight_pct": 33,
+              "dok_distribution": {"2": 0.60, "3": 0.40}
+            }
+          ]
+        }
+      },
+      "item_types": {
+        "ELA": [
+          {
+            "name": "Selected Response",
+            "abbreviation": "SR",
+            "description": "Single best answer from 4 options. 1 point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Which central idea is BEST supported by the details in paragraphs 3-5?"
+          },
+          {
+            "name": "Multi-Select Response",
+            "abbreviation": "MS",
+            "description": "Choose exactly 2 or 3 correct answers. Full credit only if ALL correct.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": "Select TWO details that support the author's argument."
+          },
+          {
+            "name": "Evidence-Based Selected Response",
+            "abbreviation": "EBSR",
+            "description": "Two-part item: Part A (inference), Part B (text evidence). 2 points.",
+            "points": 2,
+            "machine_scored": true,
+            "example_stem": "Part A: What theme does the author develop? Part B: Which quote supports your answer?"
+          },
+          {
+            "name": "Technology Enhanced",
+            "abbreviation": "TE",
+            "description": "Drag-drop, selectable text, or matching. 1-2 points.",
+            "points": "1-2",
+            "machine_scored": true,
+            "example_stem": "Click on the sentence in paragraph 2 that shows the character's motivation."
+          },
+          {
+            "name": "Full Write",
+            "abbreviation": "FW",
+            "description": "Multi-paragraph essay. 3 traits × 0-4 = 12 points.",
+            "points": "0-12",
+            "machine_scored": false,
+            "example_stem": "Write an argument essay using evidence from at least two sources."
+          }
+        ],
+        "MATH": [
+          {
+            "name": "Selected Response",
+            "abbreviation": "SR",
+            "description": "Four-option single best answer. 1 point.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Equation/Numeric Entry",
+            "abbreviation": "EQ",
+            "description": "Student types numeric answer or expression.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Short Constructed Response",
+            "abbreviation": "SCR",
+            "description": "Written mathematical explanation. Scored 0-2.",
+            "points": "0-2",
+            "machine_scored": false,
+            "example_stem": "Explain your reasoning using mathematics."
+          },
+          {
+            "name": "Performance Task",
+            "abbreviation": "PT",
+            "description": "Multi-part real-world problem. Scored 0-6.",
+            "points": "0-6",
+            "machine_scored": false,
+            "example_stem": null
+          }
+        ],
+        "SCI": [
+          {
+            "name": "Selected Response",
+            "abbreviation": "SR",
+            "description": "NGSS-aligned four-option MCQ integrating SEP, DCI, and CCC.",
+            "points": 1,
+            "machine_scored": true,
+            "example_stem": null
+          },
+          {
+            "name": "Constructed Response",
+            "abbreviation": "CR",
+            "description": "Evidence-based scientific explanation. Scored 0-3.",
+            "points": "0-3",
+            "machine_scored": false,
+            "example_stem": "Use evidence to support your claim that..."
+          }
+        ]
+      },
+      "rubrics": {
+        "ELA": {
+          "FW": {
+            "trait": "Organization/Purpose",
+            "score_points": [
+              {"score": 4, "description": "Clear and effective organizational structure. Strong command of purpose. Sophisticated transitions.", "anchor_example": null},
+              {"score": 3, "description": "Adequate structure. Clear introduction and conclusion. Logical development. Transitions present.", "anchor_example": null},
+              {"score": 2, "description": "Inconsistent structure. Introduction or conclusion weak. Limited transitions.", "anchor_example": null},
+              {"score": 1, "description": "Little or no structure. No clear introduction or conclusion.", "anchor_example": null},
+              {"score": 0, "description": "Blank or off-task.", "anchor_example": null}
+            ]
+          }
+        },
+        "MATH": {
+          "SCR": {
+            "trait": "Mathematical Reasoning",
+            "score_points": [
+              {"score": 2, "description": "Correct solution with clear mathematical reasoning. Appropriate vocabulary.", "anchor_example": null},
+              {"score": 1, "description": "Partial understanding with minor errors or incomplete explanation.", "anchor_example": null},
+              {"score": 0, "description": "Incorrect or blank.", "anchor_example": null}
+            ]
+          }
+        }
+      },
+      "generation_templates": {
+        "ELA": [
+          {
+            "template_id": "IL-ELA-EBSR-DOK2-GR35",
+            "item_type": "EBSR",
+            "dok_level": 2,
+            "grade_band": "3-5",
+            "template_text": "Read the passage \"[PASSAGE_TITLE]\" ([LEXILE]L).\n\nPart A ([CCSS_CODE]):\nWhat is the [central idea / theme / relationship] in this text?\nA. [Distractor]\nB. [Correct]\nC. [Distractor]\nD. [Distractor]\n\nPart B:\nWhich detail from the text BEST supports your answer to Part A?\nA. \"[Quote — no support]\"\nB. \"[Quote — direct support]\"\nC. \"[Quote — tangential]\"\nD. \"[Quote — misleading]\"\n\nAnswer Key: Part A: B | Part B: B\nAlignment: [CCSS_CODE] | Claim 1 | DOK 2 | [LEXILE]L",
+            "placeholders": ["PASSAGE_TITLE", "LEXILE", "CCSS_CODE"]
+          }
+        ],
+        "MATH": [
+          {
+            "template_id": "IL-MATH-SCR-DOK3",
+            "item_type": "SCR",
+            "dok_level": 3,
+            "grade_band": "3-8",
+            "template_text": "[REAL-WORLD CONTEXT]\n\n[PROBLEM STEM requiring strategic thinking]\n\nShow your work and explain your reasoning.\n\n[SCORING GUIDE]\n2 points: Correct answer with clear mathematical reasoning.\n1 point: Correct method with error, or correct answer without explanation.\n0 points: Incorrect or blank.\n\nAlignment: [CCSS_CODE] | Claim 2 or 3 | DOK 3",
+            "placeholders": ["REAL-WORLD CONTEXT", "PROBLEM STEM", "CCSS_CODE"]
+          }
+        ],
+        "SCI": [
+          {
+            "template_id": "IL-SCI-SR-DOK2-NGSS",
+            "item_type": "SR",
+            "dok_level": 2,
+            "grade_band": "5-8",
+            "template_text": "[PHENOMENON DESCRIPTION or DATA / DIAGRAM]\n\n[Question integrating SEP + DCI + CCC]\n\nA [Distractor — surface-level observation only]\nB [Distractor — partially correct science]\nC [Correct — integrates all three NGSS dimensions]\nD [Distractor — common misconception]\n\nCorrect Answer: C\nAlignment: [NGSS_PE] | DOK 2",
+            "placeholders": ["PHENOMENON", "NGSS_PE"]
+          }
+        ]
+      },
+      "standards": {
+        "ELA": {
+          "5": [
+            {"code": "IL.CCSS.ELA-Literacy.RI.5.3", "description": "Explain the relationships or interactions between two or more individuals, events, ideas, or concepts.", "domain": "Reading: Informational Text", "grade": "5", "dok_typical": 2},
+            {"code": "IL.CCSS.ELA-Literacy.W.5.1", "description": "Write opinion pieces supporting a point of view with reasons and information.", "domain": "Writing", "grade": "5", "dok_typical": 3}
+          ]
+        },
+        "MATH": {
+          "5": [
+            {"code": "IL.CCSS.Math.5.NF.A.1", "description": "Add and subtract fractions with unlike denominators, including mixed numbers.", "domain": "Number and Operations — Fractions", "grade": "5", "dok_typical": 2},
+            {"code": "IL.CCSS.Math.5.OA.A.2", "description": "Write and interpret simple expressions that record calculations with numbers.", "domain": "Operations and Algebraic Thinking", "grade": "5", "dok_typical": 2}
+          ]
+        }
+      }
+    },
+
+    "AK": {
+      "name": "Alaska",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "AK STAR ELA", "MATH": "AK STAR Mathematics", "SCI": "AK STAR Science"},
+      "standards_framework": {"ELA": "Alaska ELA Standards", "MATH": "Alaska Math Standards", "SCI": "Alaska Science Standards"},
+      "testing_window": "Spring",
+      "vendor": "Alaska Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "AL": {
+      "name": "Alabama",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "ACAP ELA", "MATH": "ACAP Mathematics", "SCI": "ACAP Science"},
+      "standards_framework": {"ELA": "Alabama CCRS-ELA", "MATH": "Alabama CCRS-Math", "SCI": "Alabama Science Standards"},
+      "testing_window": "Spring",
+      "vendor": "Alabama Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "AR": {
+      "name": "Arkansas",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "ATLAS ELA", "MATH": "ATLAS Mathematics", "SCI": "ATLAS Science"},
+      "standards_framework": {"ELA": "Arkansas ELA Standards", "MATH": "Arkansas Math Standards", "SCI": "Arkansas Science Standards"},
+      "testing_window": "Spring",
+      "vendor": "Arkansas Division of Elementary and Secondary Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "AZ": {
+      "name": "Arizona",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "AzM2 ELA / AzSCI", "MATH": "AzM2 Mathematics", "SCI": "AzSCI"},
+      "standards_framework": {"ELA": "Arizona ELA Standards", "MATH": "Arizona Math Standards", "SCI": "Arizona Science Standards"},
+      "testing_window": "Spring",
+      "vendor": "Arizona Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "CO": {
+      "name": "Colorado",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "CMAS ELA", "MATH": "CMAS Mathematics", "SCI": "CMAS Science"},
+      "standards_framework": {"ELA": "Colorado ELA Standards", "MATH": "Colorado Math Standards", "SCI": "NGSS"},
+      "testing_window": "March – April",
+      "vendor": "Colorado Department of Education / Pearson",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "CT": {
+      "name": "Connecticut",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "SBAC ELA (CT SAT School Day)", "MATH": "SBAC Math (CT SAT School Day)", "SCI": "NGSS Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "Smarter Balanced / College Board",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "DC": {
+      "name": "District of Columbia",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "DC CAPE ELA", "MATH": "DC CAPE Mathematics", "SCI": "DC CAPE Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "Spring",
+      "vendor": "Office of the State Superintendent of Education (OSSE)",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "DE": {
+      "name": "Delaware",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "DCAS ELA", "MATH": "DCAS Mathematics", "SCI": "DCAS Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "Spring",
+      "vendor": "Delaware Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "GA": {
+      "name": "Georgia",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","EOC"],
+      "assessments": {"ELA": "Georgia Milestones ELA", "MATH": "Georgia Milestones Mathematics", "SCI": "Georgia Milestones Science"},
+      "standards_framework": {"ELA": "Georgia ELA Standards", "MATH": "Georgia Math Standards", "SCI": "Georgia Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Georgia Department of Education / American Institutes for Research",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "HI": {
+      "name": "Hawaii",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "HSA ELA (Smarter Balanced)", "MATH": "HSA Math (Smarter Balanced)", "SCI": "HSA Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "Hawaii Department of Education / ETS",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "IA": {
+      "name": "Iowa",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "Iowa Statewide Assessment (ISA) ELA", "MATH": "ISA Mathematics", "SCI": "ISA Science"},
+      "standards_framework": {"ELA": "Iowa Core ELA", "MATH": "Iowa Core Math", "SCI": "Iowa Core Science"},
+      "testing_window": "April – May",
+      "vendor": "Iowa Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "ID": {
+      "name": "Idaho",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "ISAT ELA (Smarter Balanced)", "MATH": "ISAT Math (Smarter Balanced)", "SCI": "ISAT Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "Idaho State Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "IN": {
+      "name": "Indiana",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "ILEARN ELA", "MATH": "ILEARN Mathematics", "SCI": "ILEARN Science"},
+      "standards_framework": {"ELA": "Indiana ELA Standards", "MATH": "Indiana Math Standards", "SCI": "Indiana Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Indiana Department of Education / Pearson",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "KS": {
+      "name": "Kansas",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "KSDE ELA Assessment", "MATH": "KSDE Mathematics Assessment", "SCI": "KSDE Science Assessment"},
+      "standards_framework": {"ELA": "Kansas ELA Standards", "MATH": "Kansas Math Standards", "SCI": "NGSS"},
+      "testing_window": "April – May",
+      "vendor": "Kansas State Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "KY": {
+      "name": "Kentucky",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "KSA ELA", "MATH": "KSA Mathematics", "SCI": "KSA Science"},
+      "standards_framework": {"ELA": "Kentucky ELA Standards", "MATH": "Kentucky Math Standards", "SCI": "Kentucky Science Standards"},
+      "testing_window": "April",
+      "vendor": "Kentucky Department of Education / Cognia",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "LA": {
+      "name": "Louisiana",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "LEAP 2025 ELA", "MATH": "LEAP 2025 Mathematics", "SCI": "LEAP 2025 Science"},
+      "standards_framework": {"ELA": "Louisiana ELA Standards", "MATH": "Louisiana Math Standards", "SCI": "Louisiana Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Louisiana Department of Education / Pearson",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "MCAS ELA", "MATH": "MCAS Mathematics", "SCI": "MCAS Science/Technology/Engineering"},
+      "standards_framework": {"ELA": "Massachusetts ELA Curriculum Frameworks", "MATH": "Massachusetts Math Curriculum Frameworks", "SCI": "Massachusetts Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Massachusetts DESE / Cognia",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "MD": {
+      "name": "Maryland",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "MCAP ELA", "MATH": "MCAP Mathematics", "SCI": "MCAP Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "April – May",
+      "vendor": "Maryland State Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "ME": {
+      "name": "Maine",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "MEA ELA (Smarter Balanced)", "MATH": "MEA Math (Smarter Balanced)", "SCI": "MEA Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "April – May",
+      "vendor": "Maine Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "MI": {
+      "name": "Michigan",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "M-STEP ELA", "MATH": "M-STEP Mathematics", "SCI": "M-STEP Science"},
+      "standards_framework": {"ELA": "Michigan ELA Standards", "MATH": "Michigan Math Standards", "SCI": "Michigan Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Michigan Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "MN": {
+      "name": "Minnesota",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "MCA ELA", "MATH": "MCA Mathematics", "SCI": "MCA Science"},
+      "standards_framework": {"ELA": "Minnesota ELA Standards", "MATH": "Minnesota Math Standards", "SCI": "Minnesota Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Minnesota Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "MO": {
+      "name": "Missouri",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "MAP ELA", "MATH": "MAP Mathematics", "SCI": "MAP Science"},
+      "standards_framework": {"ELA": "Missouri ELA Standards", "MATH": "Missouri Math Standards", "SCI": "Missouri Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Missouri Department of Elementary and Secondary Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "MS": {
+      "name": "Mississippi",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "MAAP ELA", "MATH": "MAAP Mathematics", "SCI": "MAAP Science"},
+      "standards_framework": {"ELA": "Mississippi ELA Standards", "MATH": "Mississippi Math Standards", "SCI": "Mississippi Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Mississippi Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "MT": {
+      "name": "Montana",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "MontCAS ELA (Smarter Balanced)", "MATH": "MontCAS Math (Smarter Balanced)", "SCI": "MontCAS Science"},
+      "standards_framework": {"ELA": "Montana ELA Standards", "MATH": "Montana Math Standards", "SCI": "Montana Science Standards"},
+      "testing_window": "March – May",
+      "vendor": "Montana Office of Public Instruction",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "NC": {
+      "name": "North Carolina",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "NCFE ELA / EVAAS", "MATH": "NCFE Mathematics", "SCI": "NCFE Science"},
+      "standards_framework": {"ELA": "NC ELA Standards", "MATH": "NC Math Standards", "SCI": "NC Science Standards"},
+      "testing_window": "May – June",
+      "vendor": "North Carolina Department of Public Instruction",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "ND": {
+      "name": "North Dakota",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "NDSA ELA (Smarter Balanced)", "MATH": "NDSA Math (Smarter Balanced)", "SCI": "NDSA Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "North Dakota Department of Public Instruction",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "NE": {
+      "name": "Nebraska",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "NSCAS ELA", "MATH": "NSCAS Mathematics", "SCI": "NSCAS Science"},
+      "standards_framework": {"ELA": "Nebraska ELA Standards", "MATH": "Nebraska Math Standards", "SCI": "Nebraska Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Nebraska Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "NH SAS ELA (Smarter Balanced)", "MATH": "NH SAS Math (Smarter Balanced)", "SCI": "NH SAS Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "New Hampshire Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "NJSLA ELA", "MATH": "NJSLA Mathematics", "SCI": "NJSLA Science"},
+      "standards_framework": {"ELA": "NJSLS-ELA", "MATH": "NJSLS-Math", "SCI": "NGSS"},
+      "testing_window": "April – May",
+      "vendor": "New Jersey Department of Education / Cognia",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "NM": {
+      "name": "New Mexico",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "NMSA ELA", "MATH": "NMSA Mathematics", "SCI": "NMSA Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "April – May",
+      "vendor": "New Mexico Public Education Department",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "NV": {
+      "name": "Nevada",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "Nevada SBA ELA (Smarter Balanced)", "MATH": "Nevada SBA Math (Smarter Balanced)", "SCI": "Nevada Science Assessment"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "Nevada Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "OH": {
+      "name": "Ohio",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "Ohio State Tests ELA", "MATH": "Ohio State Tests Mathematics", "SCI": "Ohio State Tests Science"},
+      "standards_framework": {"ELA": "Ohio ELA Standards", "MATH": "Ohio Math Standards", "SCI": "Ohio Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Ohio Department of Education / American Institutes for Research",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "OSTP ELA", "MATH": "OSTP Mathematics", "SCI": "OSTP Science"},
+      "standards_framework": {"ELA": "Oklahoma ELA Standards", "MATH": "Oklahoma Math Standards", "SCI": "Oklahoma Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Oklahoma State Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "OR": {
+      "name": "Oregon",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "Oregon OSAS ELA (Smarter Balanced)", "MATH": "Oregon OSAS Math (Smarter Balanced)", "SCI": "Oregon OSAS Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "Oregon Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "PSSA ELA", "MATH": "PSSA Mathematics", "SCI": "PSSA Science"},
+      "standards_framework": {"ELA": "PA CCSS-ELA", "MATH": "PA CCSS-Math", "SCI": "PA Science Standards"},
+      "testing_window": "April",
+      "vendor": "Pennsylvania Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "RICAS ELA", "MATH": "RICAS Mathematics", "SCI": "RICAS Science"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "April – May",
+      "vendor": "Rhode Island Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "SC": {
+      "name": "South Carolina",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "SC READY ELA", "MATH": "SC READY Mathematics", "SCI": "SC PASS Science"},
+      "standards_framework": {"ELA": "SC ELA Standards", "MATH": "SC Math Standards", "SCI": "SC Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "South Carolina Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "SD": {
+      "name": "South Dakota",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "SD Smarter ELA (Smarter Balanced)", "MATH": "SD Smarter Math (Smarter Balanced)", "SCI": "SD Science Assessment"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "South Dakota Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "TN": {
+      "name": "Tennessee",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","EOC"],
+      "assessments": {"ELA": "TNReady ELA", "MATH": "TNReady Mathematics", "SCI": "TNReady Science"},
+      "standards_framework": {"ELA": "Tennessee ELA Standards", "MATH": "Tennessee Math Standards", "SCI": "Tennessee Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "Tennessee Department of Education / Questar",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "UT": {
+      "name": "Utah",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "RISE ELA (Smarter Balanced adapted)", "MATH": "RISE Math (Smarter Balanced adapted)", "SCI": "Utah Science Assessment"},
+      "standards_framework": {"ELA": "Utah Core ELA Standards", "MATH": "Utah Core Math Standards", "SCI": "Utah Science Standards"},
+      "testing_window": "March – May",
+      "vendor": "Utah State Board of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "VA": {
+      "name": "Virginia",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","EOC"],
+      "assessments": {"ELA": "SOL English Reading", "MATH": "SOL Mathematics", "SCI": "SOL Science"},
+      "standards_framework": {"ELA": "Virginia SOL-ELA", "MATH": "Virginia SOL-Math", "SCI": "Virginia SOL-Science"},
+      "testing_window": "May – June",
+      "vendor": "Virginia Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "VT": {
+      "name": "Vermont",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "Smarter Balanced ELA (VT)", "MATH": "Smarter Balanced Math (VT)", "SCI": "Vermont Science Assessment"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "Vermont Agency of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "WA": {
+      "name": "Washington",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "SBAC ELA (Washington)", "MATH": "SBAC Math (Washington)", "SCI": "Washington Science Assessment"},
+      "standards_framework": {"ELA": "CCSS-ELA", "MATH": "CCSS-Math", "SCI": "NGSS"},
+      "testing_window": "March – June",
+      "vendor": "Washington Office of Superintendent of Public Instruction / ETS",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","10"],
+      "assessments": {"ELA": "Forward Exam ELA", "MATH": "Forward Exam Mathematics", "SCI": "Forward Exam Science"},
+      "standards_framework": {"ELA": "Wisconsin ELA Standards", "MATH": "Wisconsin Math Standards", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "Wisconsin Department of Public Instruction",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "WV": {
+      "name": "West Virginia",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "WVGSA ELA", "MATH": "WVGSA Mathematics", "SCI": "WVGSA Science"},
+      "standards_framework": {"ELA": "West Virginia ELA Standards", "MATH": "West Virginia Math Standards", "SCI": "West Virginia Science Standards"},
+      "testing_window": "April – May",
+      "vendor": "West Virginia Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    },
+    "WY": {
+      "name": "Wyoming",
+      "tier": 2,
+      "grades": ["3","4","5","6","7","8","11"],
+      "assessments": {"ELA": "WY-TOPP ELA", "MATH": "WY-TOPP Mathematics", "SCI": "WY-TOPP Science"},
+      "standards_framework": {"ELA": "Wyoming ELA Standards", "MATH": "Wyoming Math Standards", "SCI": "NGSS"},
+      "testing_window": "March – May",
+      "vendor": "Wyoming Department of Education",
+      "subjects": ["ELA","MATH","SCI"],
+      "blueprints": {}, "item_types": {}, "rubrics": {}, "generation_templates": {}, "standards": {}
+    }
+  }
+}

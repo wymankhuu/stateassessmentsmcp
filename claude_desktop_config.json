@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "assessmentforge": {
+      "command": "python",
+      "args": ["-m", "server.main"],
+      "cwd": "/Users/wymankhuu/Desktop/Projects/State Assessment MCP/stateassessmentsmcp"
+    }
+  }
+}
